@@ -1,0 +1,74 @@
+div {
+/*	border: solid 1px blue;
+	background: #C8C8C8;*/
+}
+
+#stammbaum-container{
+	width: 100%;
+	min-width: 1000px;
+	height: 100%;
+	padding: 10px;
+	text-align: center;
+	background: #FFFFFF;
+	font-family: "open-sans", "asap", "Constantia", "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	flex-wrap:nowrap;
+}
+
+.node-container{
+	max-width: 200px;
+	display: inline-block;
+	text-align: center;
+}
+
+.node{
+	margin: 0px 2px 0px 2px;
+	padding: 5px 10px 5px 10px;
+	background: white;
+	border-bottom: solid 2px black;
+	border-top: solid 1px black;
+}
+
+.person {
+	background: rgba(255,255,255,0.00);
+	transition: background-color 0.3s, transform 0.5s, border 0.3s;
+	border: solid 0px #A5FAFF;
+}
+
+.person:hover{
+	background: #A5FAFF;
+	transform: translateY(-3px);
+	border: solid 10px #A5FAFF;
+	cursor: pointer;
+}
+
+.node-text{
+	font-size: 19px;
+}
+
+.node-date {
+	font-size: 15px;
+}
+
+.node-line-vert {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1.5px;
+	background-color: black;
+	height: 140px;
+}
+
+.node-row{
+	border-top: solid 1px black;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.node-row .node{
+	border-top: none;
+}
+
+.verheiratet{
+	font-size: 29px;
+}
